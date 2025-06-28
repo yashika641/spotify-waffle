@@ -41,6 +41,7 @@ A full-stack, feature-rich clone of Spotify with real-time music streaming, play
 ---
 
 ## 📁 Project Structure
+```
 spotify-clone/
 ├── client/ # React frontend
 │ └── components/
@@ -54,7 +55,7 @@ spotify-clone/
 ├── public/ # Static files
 ├── .env # Environment variables
 └── README.md
-
+```
 
 ---
 
