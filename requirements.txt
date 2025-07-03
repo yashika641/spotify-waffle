@@ -38,3 +38,11 @@ joblib
 uvicorn
 openai
 fastapi
+mysql-connector-python
+sqlalchemy
+sqlalchemy-utils
+passlib
+python-dotenv
+pytest
+jose
+jwt
