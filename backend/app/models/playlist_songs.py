@@ -13,7 +13,7 @@ class PlaylistSong(Base):
 
     song_id = Column(
         Integer,
-        ForeignKey("songs.song_id", ondelete="CASCADE"),
+        ForeignKey("songs.id", ondelete="CASCADE"),
         primary_key=True
     )
 

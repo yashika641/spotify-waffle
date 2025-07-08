@@ -7,6 +7,7 @@ class UserBase(BaseModel):
     email: EmailStr
     country: Optional[str]
     date_of_birth: Optional[date]
+    profile_picture: Optional[str] = None  # ✅ add this
 
 class UserCreate(UserBase):
     password: str

@@ -1,21 +1,17 @@
 from pydantic import BaseModel
-from typing import Optional
+from datetime import datetime
 
 class SongBase(BaseModel):
     title: str
-    duration_seconds: Optional[int]
-    audio_url: str
-    mood: Optional[str]
-    language: Optional[str]
-    album_id: Optional[int]
-    artist_id: Optional[int]
-    genre_id: Optional[int]
+    song_url: str
+    cover_url: str
 
 class SongCreate(SongBase):
     pass
 
 class SongResponse(SongBase):
-    song_id: int
+    id: int
+    uploaded_at: datetime
 
     class Config:
         orm_mode = True

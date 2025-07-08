@@ -6,7 +6,6 @@ class Playlist(Base):
     
     playlist_id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     title = Column(String, nullable=False, index=True)
-    user_id = Column(Integer, nullable=False)  # Assuming a foreign key relationship with User
     description = Column(TEXT, nullable=True, default=None)
     cover_image = Column(String, nullable=True, default=None)
     created_at = Column(TIMESTAMP, server_default=func.now(), nullable=False)

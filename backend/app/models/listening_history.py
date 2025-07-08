@@ -13,7 +13,7 @@ class ListeningHistory(Base):
 
     song_id = Column(
         Integer,
-        ForeignKey("songs.song_id", ondelete="CASCADE"),
+        ForeignKey("songs.id", ondelete="CASCADE"),
         primary_key=True
     )
 
@@ -25,4 +25,4 @@ class ListeningHistory(Base):
 
     # Optional relationships
     user = relationship("User", back_populates="listening_history")
-    song = relationship("Song", back_populates="listeners")
+    song = relationship("Song", back_populates="listening_history")

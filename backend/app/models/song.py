@@ -1,47 +1,14 @@
-from sqlalchemy import Column , Integer , String , DATE ,TIMESTAMP,ForeignKey
-from backend.app.database import Base
+from sqlalchemy import Column, Integer, String, DateTime, func
+from backend.app.database import Base  # Adjust import path as per your setup
 from sqlalchemy.orm import relationship
-
 class Song(Base):
     __tablename__ = "songs"
 
-    song_id = Column(Integer, primary_key=True, autoincrement=True, index=True)
-    title = Column(String(150), nullable=False)
-    duration_seconds = Column(Integer, nullable=True)
-    audio_url = Column(String(255), nullable=False)
-
-    mood = Column(String(50), nullable=True)
-    language = Column(String(50), nullable=True)
-
-    album_id = Column(
-        Integer,
-        ForeignKey("albums.album_id", ondelete="SET NULL"),
-        nullable=True
-    )
-
-    artist_id = Column(
-        Integer,
-        ForeignKey("artists.artist_id", ondelete="SET NULL"),
-        nullable=True
-    )
-
-    genre_id = Column(
-        Integer,
-        ForeignKey("genres.genre_id", ondelete="SET NULL"),
-        nullable=True
-    )
-
-    # Optional relationships
-    album = relationship("Album", back_populates="songs")
-    artist = relationship("Artist", back_populates="songs")
-    genre = relationship("Genre", back_populates="songs")
-
-
-    listening_history = relationship(
-        "ListeningHistory", back_populates="user", cascade="all, delete-orphan"
-    )
-    playlists = relationship(
-        "PlaylistSong",
-        back_populates="song",
-        cascade="all, delete-orphan"
-    )
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String(255))
+    song_url = Column(String(500))
+    cover_url = Column(String(500))
+    uploaded_at = Column(DateTime(timezone=True), server_default=func.now())
+    likes = relationship("Like", back_populates="song")
+    listening_history = relationship("ListeningHistory", back_populates="song", cascade="all, delete-orphan")
+    playlists = relationship("PlaylistSong", back_populates="song", cascade="all, delete-orphan")

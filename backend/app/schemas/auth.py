@@ -1,10 +1,12 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 from typing import Optional
 
-# 📥 When user logs in
+# 📥 When user logs infrom pydantic import BaseModel
+
 class LoginRequest(BaseModel):
-    email: EmailStr
+    username_or_email: str
     password: str
+
 
 # 📤 What your API returns after login (JWT tokens)
 class Token(BaseModel):

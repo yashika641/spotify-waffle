@@ -1,4 +1,4 @@
-from sqlalchemy import Column , Integer , String , DATE ,TIMESTAMP
+from sqlalchemy import Column , Integer , String , DATE ,TIMESTAMP,func
 from backend.app.database import Base
 from sqlalchemy.orm import relationship
 class User(Base):
@@ -9,16 +9,14 @@ class User(Base):
     hashed_password = Column(String,nullable=False)
     profile_picture = Column(String,nullable=True,default=None)
     country = Column(String,default=None)
-    created_at = Column(TIMESTAMP,default=None)
-    date_of_birth = Column(DATE,default=None)
+    created_at = Column(TIMESTAMP, server_default=func.now(), nullable=False)
+    date_of_birth = Column(DATE,default=None,nullable=True)
     
     
     # Optional: Backref to get user data from playlist
     playlists = relationship("Playlist", back_populates="user", cascade="all, delete")
-    following = relationship("Follows", foreign_keys="Follows.user_id", back_populates="follower", cascade="all, delete")
-    followers = relationship("Follows", foreign_keys="Follows.artist_id", back_populates="followed", cascade="all, delete")
+    following = relationship("Follows", back_populates="follower", cascade="all, delete")
     search_logs = relationship("SearchLog", back_populates="user", cascade="all, delete")
-    likes = relationship("Like", back_populates="user", cascade="all, delete-orphan")
     listening_history = relationship(
     "ListeningHistory", back_populates="user", cascade="all, delete-orphan"
 )

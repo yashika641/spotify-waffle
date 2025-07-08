@@ -1,19 +1,18 @@
+# schemas/artist_schema.py
+
 from pydantic import BaseModel
-from typing import Optional
-from datetime import datetime
 
 class ArtistBase(BaseModel):
     name: str
-    bio: Optional[str]
-    country: Optional[str]
+    bio: str
+    image_url: str
+    country: str
 
 class ArtistCreate(ArtistBase):
     pass
 
-class ArtistResponse(ArtistBase):
-    artist_id: int
-    profile_image: Optional[str]
-    created_at: datetime
+class ArtistOut(ArtistBase):
+    id: int
 
     class Config:
         orm_mode = True
