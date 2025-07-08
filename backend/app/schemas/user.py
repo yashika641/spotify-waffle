@@ -1,18 +1,21 @@
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr
 from typing import Optional
+from datetime import date, datetime
 
 class UserBase(BaseModel):
     username: str
     email: EmailStr
-    full_name: Optional[str] = None
-    bio: Optional[str] = None
-    
-class userout(UserBase):
-    id: int
-    
+    country: Optional[str]
+    date_of_birth: Optional[date]
+    profile_picture: Optional[str] = None  # ✅ add this
+
+class UserCreate(UserBase):
+    password: str
+
+class UserResponse(UserBase):
+    user_id: int
+    profile_picture: Optional[str]
+    created_at: datetime
+
     class Config:
         orm_mode = True
-        
-class userupdate(BaseModel):
-    full_name: Optional[str]= Field(None)
-    bio: Optional[str]= Field(None)
