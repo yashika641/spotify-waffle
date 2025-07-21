@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "artist": "Pritam",
+        "image": "/cover_images/pritam.jpeg",
+        "type": "Artist"
+    },
+    {
+        "id": "2",
+        "artist": "A.R. Rahman",
+        "image": "/cover_images/AR Rahman.jpeg",
+        "type": "Artist"
+    },
+    {
+        "id": "3",
+        "artist": "Arijit Singh",
+        "image": "/cover_images/Arijit singh.jpeg",
+        "type": "Artist"
+    },
+    {
+        "id": "4",
+        "artist": "Sachin jigar",
+        "image": "/cover_images/Sachin-jigar.jpeg",
+        "type": "Artist"
+    },
+    {
+        "id": "5",
+        "artist": "Vishal-Shekhar",
+        "image": "/cover_images/Vishal-shekhar.jpeg",
+        "type": "Artist"
+    },
+    {
+        "id": "6",
+        "artist": "Atif Aslam",
+        "image": "/cover_images/Atif.jpeg",
+        "type": "Artist"
+    },
+    {
+        "id": "7",
+        "artist": "Anirudh Ravichander",
+        "image": "/cover_images/Anirudh.jpeg",
+        "type": "Artist"
+    },
+     {
+        "id": "8",
+        "artist": "Udit Narayan",
+        "image": "/cover_images/Udit.jpeg",
+        "type": "Artist"
+    },
+    {
+        "id": "9",
+        "artist": "Yo Yo Honey Singh",
+        "image": "/cover_images/Honey.jpeg",
+        "type": "Artist"
+    },
+     {
+        "id": "10",
+        "artist": "Shankar-Ehsaan-Loy",
+        "image": "/cover_images/Shankar.jpeg",
+        "type": "Artist"
+    }
+]

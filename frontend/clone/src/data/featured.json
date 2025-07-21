@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Global - Weekly Music Charts",
+    "description": "Your weekly update of the most played tracks right...",
+    "image": "/cover_images/global_weekly.jpg"
+  },
+  {
+    "id": 2,
+    "title": "India - Weekly Music Charts",
+    "description": "Your weekly update of the most played tracks right...",
+    "image": "/cover_images/india_weekly.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Global - Daily Top",
+    "description": "Your daily update of the most played tracks right...",
+    "image": "/cover_images/global_daily.jpg"
+  },
+  {
+    "id": 4,
+    "title": "India - Daily Top",
+    "description": "Your daily update of the most played tracks right...",
+    "image": "/cover_images/india_daily.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Global - Viral 50",
+    "description": "Your daily update of the most viral tracks right now...",
+    "image": "/cover_images/global_viral.jpg"
+  },
+  {
+    "id": 6,
+    "title": "India - Viral 50",
+    "description": "Your daily update of the most viral tracks right now...",
+    "image": "/cover_images/india_viral_50.jpg"
+  }
+]

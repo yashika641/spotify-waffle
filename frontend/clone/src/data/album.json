@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Aashiqui 2",
+    "artist": "Mithoon, Ankit Tiwari, Jeet Gannguli",
+    "image": "/cover_images/aashiqui2.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Yeh Jawaani Hai Deewani",
+    "artist": "Pritam",
+    "image": "/cover_images/yeh_jawaani.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Sanam Teri Kasam (Original Motion Picture Soundtrack)",
+    "artist": "Himesh Reshammiya, Sameer Anjaan, Subrat Sinha, Shabbir Ahmed",
+    "image": "/cover_images/sanam_teri_kasam.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Finding Her",
+    "artist": "Kushagra, Bharath, Saaheal",
+    "image": "/cover_images/finding_her.jpeg"
+  },
+  {
+    "id": 5,
+    "title": "Young G.O.A.T",
+    "artist": "Cheema Y, Gur Sidhu",
+    "image": "/cover_images/young_goat.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "Raanjhan (From 'Do Patti')",
+    "artist": "Sachet-Parampara, Parampara Tandon, Kausar Munir",
+    "image": "/cover_images/raanjhan.jpeg"
+  },
+  {
+    "id": 7,
+    "title": "Ultimate Love Songs - Arijit Singh",
+    "artist": "Arijit Singh",
+    "image": "/cover_images/ultimate_love_arijit.jpeg"
+  },
+  {
+    "id": 8,
+    "title": "Making Memories",
+    "artist": "Karan Aujla, Ikky",
+    "image": "/cover_images/making_memories.jpeg"
+  },
+  {
+    "id": 9,
+    "title": "Moosetape",
+    "artist": "Sidhu Moose Wala",
+    "image": "/cover_images/moosetape.jpeg"
+  },
+  {
+    "id": 10,
+    "title": "Sicario",
+    "artist": "Shubh",
+    "image": "/cover_images/sicario.jpeg"
+  }
+]
